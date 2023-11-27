@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Cascading style sheets</title>
+
+	<style type="text/css">
+		
+
+.button1{height:50px;width:100px;background:yellow;color:red;}
+
+.button1:hover{height:50px;width:100px;background:black;color:wheat;border-radius:20px;transition:2s }
+
+
+
+.box2{height:500px;width:33%;background:green ;border-radius: 20px;color: yellow;float:left;transition:2s }
+
+
+.box2:hover{height:500px;width:33%;background:yellow ;border-radius: 20px;color: blue;float:left;transition:2s }
+
+
+.box1{height:500px;width:100%;background:blue ;border-radius: 20px;color: yellow;}
+
+
+.box{height: 500px;width:33%;background:red ;border-radius: 20px;color: darkred;float:left ;transition: 1s;
+
+}
+
+
+.box:hover{background:orange ;border-radius: 40px;color: yellow;transition: 1s;
+
+}
+
+.cr{
+	color: red;
+}
+.cr:hover{
+	color: wheat;
+}
+
+.cb{
+	color: blue;
+}
+
+.bgr{background: red}
+
+
+.bgg{
+	background: green;
+}
+
+.bgg:hover{
+	background: black;
+}
+
+.fs10{
+	font-size: 10px;
+}
+.fs20{
+	font-size: 20px;
+}
+
+.fs50{
+	font-size: 50px;
+}
+
+.button{color:yellow;background:black;font-size:20px;border-radius:20px}
+
+.button:hover{color:yellow;background:green;font-size:50px;border-radius:10px}
+
+
+#hy{height:200px;width:50%;background:red}
+/*		4 type of selectors*/
+
+/*1 - class ( . )*/
+/*2 - id(  # )
+3 - tag ( all tag)
+4 - universal ( * )*/
+	</style>
+</head>
+<body>
+<!-- css3
+
+1.inline css (any tag style)
+2.internal css (inside head tag style tag )
+
+3.external css (creat new page save with .css)
+
+
+
+
+
+ -->
+
+<!-- 
+
+
+
+<button class="button">send</button>
+
+
+
+
+ <div class="box"></div>
+ 
+ <h1 class="cr fs20 bgg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+
+ <h1 class="cb fs10 bgr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+
+
+
+<h1 class="cr fs50 bgg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+
+
+
+<h1 class="cb fs10 bgr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+
+
+
+ <h1 class="cr fs20 bgg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+
+
+
+ <h1 class="cb fs50 bgr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+
+
+
+ -->
+
+
+<div class="box1">
+	
+
+	<div class="box">
+		
+	</div>
+
+	<div class="box">
+		
+
+	</div>
+
+	<div class="box">
+		
+
+	</div>
+
+</div>
+
+<br>
+
+<div class="box1">
+	
+	<div class="box2"></div>
+
+	<div class="box2"></div>
+
+	<div class="box2"></div>
+
+
+</div>
+
+<button class="button1">submit</button>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+#box{height:500px;width:100%;background:blue;}
+
+#box1{height:500px;width:33%;background:yellow;}
+
+#box1:hover{height:500px;width:33%;background:darkcyan;transition: 3s}
+
+#box2{height:500px;width:33%;background:orange;}
+
+
+
+#box3{height:500px;width:33%;background:red;}
+
+.fl{float: left;}
+
+h1{
+	color: green;
+	font-family: cursive;
+}
+
+p{color: red;font-family:sans-serif;background:yellow; }
+
+*{
+	font-family: cursive;
+}
