@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NewMag - A Complete blog & magazine HTML Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+
+.triangles {
+  transform: translate(-50%, -50%);
+  height: 81px;
+  width: 90px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.tri {
+  position: absolute;
+  animation: pulse_51 750ms ease-in infinite;
+  border-top: 27px solid #215A6D;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 0px;
+}
+
+.tri.invert {
+  border-top: 0px;
+  border-bottom: 27px solid #215A6D;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
+.tri:nth-child(1) {
+  left: 30px;
+}
+
+.tri:nth-child(2) {
+  left: 15px;
+  top: 27px;
+  animation-delay: -125ms;
+}
+
+.tri:nth-child(3) {
+  left: 30px;
+  top: 27px;
+}
+
+.tri:nth-child(4) {
+  left: 45px;
+  top: 27px;
+  animation-delay: -625ms;
+}
+
+.tri:nth-child(5) {
+  top: 54px;
+  animation-delay: -250ms;
+}
+
+.tri:nth-child(6) {
+  top: 54px;
+  left: 15px;
+  animation-delay: -250ms;
+}
+
+.tri:nth-child(7) {
+  top: 54px;
+  left: 30px;
+  animation-delay: -375ms;
+}
+
+.tri:nth-child(8) {
+  top: 54px;
+  left: 45px;
+  animation-delay: -500ms;
+}
+
+.tri:nth-child(9) {
+  top: 54px;
+  left: 60px;
+  animation-delay: -500ms;
+}
+
+@keyframes pulse_51 {
+  0% {
+    opacity: 1;
+  }
+
+  16.666% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* #loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+} */
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+ 
+}
+
+
+
+
+
+
+
+*{font-family: open sans, sans-serif;}
+
+.fs11{font-size:20px;color:black;margin-left:20px;margin-top:20px }
+.fs11:hover{font-size:20px;color:red;margin-left:20px;margin-top:20px }
+
+.fs12{font-size:20px;color:#ffffff;}
+.fs12:hover{font-size:20px;color:red;}
+
+
+.i{color:#ffffff }
+.i:hover{color:red }
+
+.i2{color:#ffffff;font-size:30px }
+.i2:hover{color:#bdbdbd;font-size:30px}
+
+.fl{float:left;}
+.l1{background:#1d2e4a;height:35px;width:100%}
+
+.wh{color: #ffffff;font-size:15px;margin-left:30px;margin-top:0px }
+
+.l2{background:#ffffff;height:90px;width:100%;display:block;position:sticky;top:0 }
+.menu{margin-top: 40px;margin-left: 30px;float: left;color: black;}
+.menu:hover{margin-top: 40px;margin-left: 30px;float: left;color: red;}
+
+.cbr{color:black;}
+.cbr:hover{color:red;}
+
+.l3{height:600px;width:100%}
+.bg1{height: 600px;width:60%;float:left ;background-image: url('images/slider/slider1.jpg');background-size:cover;background-position: center;}
+.b1{color:#ffffff;background:#029ee6;border-style:none;height:30px;width:70px;font-size:20px }
+.b1:hover{color:#ffffff;background:#383838;border-style:none;height:30px;width:70px;font-size:20px }
+.b2{color:#ffffff;background:#ff5c8d;border-style:none;height:30px;width:100px;font-size:20px }
+.b2:hover{color:#ffffff;background:#383838;border-style:none;height:30px;width:100px;font-size:20px }
+
+.center1{margin-top:480px;margin-left:25% }
+.black0{height:100%;width: 100%;background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);}
+
+
+.bg2{height:300px;width:40%;float: left;background-image: url('images/slider/slider2.jpg');background-size:cover;background-position: center; }
+.b3{color:#ffffff;background:#029ee6;border-style:none;height:30px;width:150px;font-size:20px}
+.b3:hover{color:#ffffff;background:#383838;border-style:none;height:30px;width:150px;font-size:20px}
+
+.b4{color:#ffffff;background:#4dff82;border-style: none;height: 30px;width:100px;font-size: 20px}
+.b4:hover{color:#ffffff;background:#383838;border-style: none;height: 30px;width:100px;font-size: 20px}
+
+.center2{margin-top:200px;margin-left:20px }
+.black1{height:34%;width: 100%;background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);}
+
+
+.bg3{height:300px;width:40%;float:left;background-image: url('images/slider/slider3.jpg');background-size:cover;background-position:center; }
+.b5{color:#ffffff;background:#4dff82;border-style:none;height:30px;width:100px;font-size:20px}
+.b5:hover{color:#ffffff;background:#383838;border-style:none;height:30px;width:100px;font-size:20px}
+
+.b6{color:#ffffff;background:#fc5b99;border-style:none;height:30px;width:70px;font-size:20px}
+.b6:hover{color:#ffffff;background:#383838;border-style:none;height:30px;width:70px;font-size:20px}
+
+.center3{margin-top:200px;margin-left:20px}
+.black3{height:33%;width: 100%;background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);}
+
+.l4{height:200px;width:100%;background:#ffffff}
+.l5{height:100px;width:20%;background: #ffffff;margin-top:50px;float:left; }
+.l6{height:100px;width:80%;background: #ffffff;float: left;margin-top:50px }
+.b7{color:#ffffff;background:#fc4c5d;border-style:none;height:70px;width:200px;font-size:20px ;margin-left:100px;float:right;}
+.b7:hover{color:#ffffff;background:#383838;border-style:none;height:70px;width:200px;font-size:20px ;margin-left:100px;float:right;}
+
+.menu1{ float:left;color:black;font-size: 20px;margin-top:20px }
+.menu1:hover{ float:left;color:red;font-size:20px;margin-top:20px }
+
+.l7{height:500px;width:100%;background:#ffffff;}
+.fs1{font-size:30px;margin-left:80px;color:#474747}
+
+.l8{height:400px;width:45%;margin-left:80px;float:left;}
+.images1{background-image:url(images/trending3.jpg);height:400px;width:45%;float: left;background-size: 110% 110%;background-position: center;transition:5s;}
+.images1:hover{background-image:url(images/trending3.jpg);height:400px;width:45%;float: left;background-size: 100% 100%;background-position: center;transition:5s;}
+
+
+
+
+.i3{color:#ffffff;font-size:20px}
+.i3:hover{color:#bdbdbd;font-size:20px}
+.fs10{font-size:15px;color:#ffffff}
+.fs10:hover{font-size:15px;color:#bdbdbd}
+.mt{margin-top:250px;}
+.b8{color:#ffffff;background:#029ee6;height:30px;width:80px;border-style:none;font-size:20px}
+.b8:hover{color:#ffffff;background:#383838;height:30px;width:80px;border-style:none;font-size:20px}
+
+.b9{color:#ffffff;background:#4dff82;height:30px;width:120px;border-style:none;font-size:20px}
+.b9:hover{color:#ffffff;background:#383838;height:30px;width:120px;border-style:none;font-size:20px}
+
+.b10{color:#ffffff;background:#fc5b99;height:30px;width:100px;border-style:none;font-size:20px}
+.b10:hover{color:#ffffff;background:#383838;height:30px;width:100px;border-style:none;font-size:20px}
+
+.black4{height:150px;width:100%;background:#080606d9;}
+
+
+.l9{height:400px;width:250px;margin-left:30px;float:left;background:black; }
+.images2{background-image:url(images/mostviewed3.jpg);height:400px;width:250px;background-size:cover;background-position:center;}
+.mt1{margin-top:300px;}
+.black5{height:400px;width:250px;background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);float: left;}
+
+
+.l10{height:400px;width:250px;margin-left:30px;float:left;background:black; }
+.images3{background-image:url(images/mostviewed1.jpg);height:400px;width:250px;background-size:cover;background-position:center;}
+.black5{height:400px;width:250px;background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);float: left;}
+
+
+.bbb{
+	height: 100%;
+	width: 100%;
+	
+	float: left;
+	transition: 1s;
+}
+
+.bbb:hover{
+	height: 100%;
+	width: 100%;
+	background: #3983ad6b;
+	transition: 1s;
+
+	float: left;
+}
+
+.l11{height:200px;width:100%}
+.images4{background-image:url(images/pd1.jpg);height:120px;width:80%;margin-left:120px;background-size:cover;background-position:center; }
+
+.l12{height:430px;width:100%;}
+.images5{background-image:url(images/trending1.jpg);height:400px;width:45%;margin-left:80px;background-size: 110% 110%;background-position:center;float:left;transition:5s }
+.images5:hover{background-image:url(images/trending1.jpg);height:400px;width:45%;margin-left:80px;background-size: 100% 100%;background-position:center;float:left;transition:5s}
+
+.black6{height:200px;width:100%;background:#00000080;margin-top:200px}
+.b11{color:#ffffff;background:#029ee6;height:30px;width:80px;border-style:none;font-size:20px}
+.b11:hover{color:#ffffff;background:#383838;height:30px;width:80px;border-style:none;font-size:20px}
+
+.b12{color:#ffffff;background:#4dff82;height:30px;width:100px;border-style:none;font-size:20px;}
+.b12:hover{color:#ffffff;background:#383838;height:30px;width:100px;border-style:none;font-size:20px;}
+
+.b13{color:#ffffff;background:#fc5b99;height:30px;width:110px;border-style:none;font-size:20px}
+.b13:hover{color:#ffffff;background:#383838;height:30px;width:110px;border-style:none;font-size:20px}
+
+.images6{background-image:url(images/trending2.jpg);height:400px;width:45%;margin-left:20px;background-size:110% 110%;background-position:center;float:left; transition:5s }
+.images6:hover{background-image:url(images/trending2.jpg);height:400px;width:45%;margin-left:20px;background-size:100% 100%;background-position:center;float:left;transition:5s}
+
+.l13{height:450px;width:100%}
+.l14{height:450px;width:50%;float:left; }
+
+.l15{height:140px;width:30%;float:left; }
+.l16{height:140px;width:70%;float:left;}
+.images7{background-image:url(images/small4.jpg);height:110px;width:180px;margin-left:20px;background-size:cover;background-position:center;margin-top:20px;}
+.b14{color:#ffffff;background:#029ee6;height:30px;width:80px;border-style:none;margin-left:20px }
+.b14:hover{color:#ffffff;background:#383838;height:30px;width:80px;border-style:none;margin-left:20px }
+
+.b15{color:#ffffff;background:#4dff82;height:30px;width:80px;border-style:none;margin-left:10px }
+.b15:hover{color:#ffffff;background:#383838;height:30px;width:80px;border-style:none;margin-left:10px }
+
+.l17{height:140px;width:30%;float:left; }
+.l18{height:140px;width:70%;float:left; }
+.images8{background-image:url(images/small5.jpg);height:110px;width:180px;margin-left:20px;background-size:cover;background-position:center;margin-top:20px }
+.b16{color:#ffffff;background:#029ee6;height:30px;width:80px;border-style:none;margin-left:20px}
+.b16:hover{color:#ffffff;background:#383838;height:30px;width:80px;border-style:none;margin-left:20px}
+
+.b17{color:#ffffff;background:#fc5b99;height:30px;width:80px;border-style:none;margin-left:20px}
+.b17:hover{color:#ffffff;background:#383838;height:30px;width:80px;border-style:none;margin-left:20px}
+
+.l19{height:140px;width:30%;float: left;}
+.l20{height:140px;width:70%;float:left; }
+.images9{background-image:url(images/small6.jpg);height:110px;width:180px;margin-left:20px;background-size:cover;background-position:center;margin-top:20px}
+.images10{background-image:url(images/small1.jpg);height:110px;width:180px;margin-left:20px;background-size:cover;background-position:center;margin-top:20px}
+
+.images11{background-image:url(images/small2.jpg);height:110px;width:180px;margin-left:20px;background-size:cover;background-position:center;margin-top:20px}
+.images12{background-image:url(images/small3.jpg);height:110px;width:180px;margin-left:20px;background-size:cover;background-position:center;margin-top:20px}
+
+
+.l21{height:450px;width:100%}
+.images13{background-image:url(images/pd2.jpg);background-size:cover;background-position:center;height:450px;width:100%;background-attachment:fixed;}
+.i4{font-size:40px;color:#ffffff;}
+.i5{font-size:20px;color:#ffffff;}
+.bt{height:450px;width:100%;background:#0000008a;line-height:2 }
+.b18{font-size:15px;color:red;background:#ffffff;border-radius:50px;border-style:none;height:50px;width:150px;transition:1s }
+.b18:hover{font-size:15px;color:#ffffff;background:red;border-radius:50px;border-style:none;height:50px;width:150px;transition:1s }
+
+.l22{height:420px;width:100%}
+.l23{height:420px;width:100%; }
+.images14{background-image:url(images/mostviewed1.jpg);height:400px;width:280px;margin-left:70px;background-size:cover;background-position:center;float: left}
+.images15{background-image:url(images/mostviewed2.jpg);height:400px;width:280px;margin-left:20px;background-size:cover;background-position:center;float: left}
+.images16{background-image:url(images/mostviewed3.jpg);height:400px;width:280px;margin-left:20px;background-size:cover;background-position:center;float: left}
+.images17{background-image:url(images/mostviewed4.jpg);height:400px;width:280px;margin-left:20px;background-size:cover;background-position:center;float: left}
+.black7{height:400px;width:280px;background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);float: left;}
+.b19{color:#777;border-style:none;transition: 1s;line-width:2px;height:30px;width:100px }
+.b19:hover{color:#ffffff;background:#333;border-style:none;transition:1s;line-width:2px;height:30px;width:100px  }
+.ml{margin-left:600px }
+.images18{background-image:url(images/trending1.jpg);height:400px;width:85%;margin-left:80px;background-size: 110% 110%;background-position:center;float:left;transition:5s }
+.images18:hover{background-image:url(images/trending1.jpg);height:400px;width:85%;margin-left:80px;background-size: 100% 100%;background-position:center;float:left;transition:5s}
+
+.l24{height:750px;width:100%; }
+.l25{height:600px;width:300px;float:left;margin-left:70px}
+.l26{height:600px;width:300px;float:left;margin-left:10px}
+.l27{height:600px;width:570px;float:left;margin-left:10px}
+
+.images19{background-image:url(images/fashion2.jpg);height:345px;width:300px;background-size:cover;background-position:center;}
+.black8{height:345px;width:300px;background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);float: left;}
+.mt250{margin-top:250px}
+.images20{background-image:url(images/fashion4.jpg);height:195px;width:300px;background-size:cover;background-position:center; }
+.black9{height:195px;width:300px;background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);float: left;}
+.mt100{margin-top:100px }
+.images21{background-image:url(images/fashion5.jpg);height:600px;width:570px;background-size:cover;background-position:center;}
+.black10{height:600px;width:570px;background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);float: left;}
+.mt500{margin-top: 500px}
+.images22{background-image:url(images/fashion1.jpg);height:245px;width:300px;background-size:cover;background-position:center;margin-top:10px }
+.black11{height:245px;width:300px;background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);float: left;}
+.mt150{margin-top:150px}
+.images23{background-image:url(images/fashion3.jpg);height:395px;width:300px;background-size:cover;background-position:center;margin-top:10px }
+.black12{height:395px;width:300px;background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);float: left;}
+.mt300{margin-top: 300px}
+
+.l28{height:258px;width:100%;}
+
+.box1{height:250px;width:30%;margin-left:60px;float: left;}
+.images24{background-image:url(images/gallery1.jpg);height:250px;width:100%;background-size:100% 100%;background-position:center;transition:3s}
+.images24:hover{background-image:url(images/gallery1.jpg);height:250px;width:100%;background-size:110% 110%;background-position:center;transition:3s }
+.black13{background:#00000094;height:250px;width:100% }
+.p80{padding-top:80px}
+.b20{color:#ffffff;background:#029ee6;height:30px;width:50px;border-style:none;}
+.b20:hover{color:#ffffff;background:#383838;height:30px;width:50px;border-style:none;}
+.b21{color:#ffffff;background:#4dff82;height:30px;width:80px;border-style:none;}
+.b21:hover{color:#ffffff;background:#383838;height:30px;width:80px;border-style:none;}
+.b22{color:#ffffff;background:#fc5b99;height:30px;width:100px;border-style:none;}
+.b22:hover{color:#ffffff;background:#383838;height:30px;width:100px;border-style:none;}
+
+.box2{height:250px;width:30%;margin-left:10px;float:left; }
+
+.images25{background-image:url(images/gallery2.jpg);height:250px;width:100%;background-size:100% 100%;background-position:center;transition:3s}
+.images25:hover{background-image:url(images/gallery2.jpg);height:250px;width:100%;background-size:110% 110%;background-position:center;transition:3s}
+
+.images26{background-image:url(images/gallery3.jpg);height:250px;width:100%;background-size:100% 100%;background-position:center;transition:3s}
+.images26:hover{background-image:url(images/gallery3.jpg);height:250px;width:100%;background-size:110% 110%;background-position:center;transition:3s}
+
+.images27{background-image:url(images/gallery4.jpg);height:250px;width:100%;background-size:100% 100%;background-position:center;transition:3s}
+.images27:hover{background-image:url(images/gallery4.jpg);height:250px;width:100%;background-size:110% 110%;background-position:center;transition:3s}
+
+.images28{background-image:url(images/gallery5.jpg);height:250px;width:100%;background-size:100% 100%;background-position:center;transition:3s}
+.images28:hover{background-image:url(images/gallery5.jpg);height:250px;width:100%;background-size:110% 110%;background-position:center;transition:3s}
+
+.images29{background-image:url(images/gallery6.jpg);height:250px;width:100%;background-size:100% 100%;background-position:center;transition:3s}
+.images29:hover{background-image:url(images/gallery6.jpg);height:250px;width:100%;background-size:110% 110%;background-position:center;transition:3s}
+
+.box3{height:250px;width:30%;margin-left:10px;float:left;}
+
+.l29{height:800px;width:100%}
+.images30{background:black url(images/footerbg.png);background-size:cover;background-position:center;height:900px;width:100%;background-attachment:fixed;}
+/*.bt1{height:900px;width:100%;background:#333333e0;;line-height:2}*/
+.fs13{font-size:20px;color:#ffffff;padding-top:20px }
+.box4{height:200px;width:89%;background:#ffffff}
+.images31{background-image:url(images/footer2.jpg);height:200px;width:200px;background-size:cover;background-position:center;float:left;}
+.images32{background-image:url(images/footer1.jpg);height:200px;width:200px;background-size:cover;background-position:center;float:left; }
+.images33{background-image:url(images/footer3.jpg);height:200px;width:200px;background-size:cover;background-position:center;float:left; }
+.images34{background-image:url(images/footer4.jpg);height:200px;width:200px;background-size:cover;background-position:center;float:left; }
+.images35{background-image:url(images/footer2.jpg);height:200px;width:200px;background-size:cover;background-position:center;float:left; }
+.images36{background-image:url(images/footer3.jpg);height:200px;width:199px;background-size:cover;background-position:center;float:left; }
+.cw{color:#ffffff }
+.box5{height:300px;width:400px;margin-left:50px;float:left; }
+.box6{height:510px;width:400px;margin-left:10px;float:left; }
+.box7{height:400px;width:170px;float:left; }
+.box8{height:400px;width:170px;float:left;margin-left:10px }
+.box9{height:300px;width:400px;margin-left:10px;float:left;}
+.box10{height:150px;width:400px;float:left;}
+.red{background: red;color:#ffffff;border-style:none;}
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+	<div id="loader">
+		<div class="triangles">
+			<div class="tri invert"></div>
+			<div class="tri invert"></div>
+			<div class="tri"></div>
+			<div class="tri invert"></div>
+			<div class="tri invert"></div>
+			<div class="tri"></div>
+			<div class="tri invert"></div>
+			<div class="tri"></div>
+			<div class="tri invert"></div>
+		  </div>
+	</div>
+	
+	<div style="display:none;" id="myDiv" class="animate-bottom">
+
+<div class="l1">
+
+<p class="wh"><i style="font-size:15px" class="fa">&#xf017;</i>2023-07-07
+	<i style="font-size:15px;margin-left:20px" class="fa">&#xf0c2;</i>Bapunagar,Ahmedabad
+	<i style="font-size:20px;margin-left:900px;padding-top:5px " class="fa i">&#xf09a;</i>
+	<i style="font-size:20px;margin-left:10px" class="fa i">&#xf081;</i>
+	<i style="font-size:20px;margin-left:10px" class="fa i">&#xf16d;</i>
+
+</p>
+</div>
+
+<div class="l2">
+	
+	<img src="images/logo1.png" style="margin-left:80px;margin-top:20px;float: left;">
+
+	<span class="menu"><a href="index.html" style="text-decoration:none;color:red;" class="cbr">HOME</a></span>
+	<span  class="menu"><a href="Blog.html" style="text-decoration:none;" class="cbr">BLOG</a></span>
+	<span  class="menu"><a href="SHOP LIST.html" style="text-decoration:none;" class="cbr">SHOP LIST</a></span>
+	<span  class="menu"><a href="ACCOUNT.html" style="text-decoration:none;" class="cbr">ACCOUNT</a></span>
+	<span  class="menu"><a href="CART.html" style="text-decoration:none;" class="cbr">CART</a></span>
+	<span  class="menu"><a href="CHECKOUT.html" style="text-decoration:none;" class="cbr">CHECKOUT</a></span>
+	<span class="menu"><a href="DETAIL.html" style="text-decoration:none;" class="cbr">DETAIL</a></span>
+	<span class="menu"><a href="ABOUT US.html" style="text-decoration:none;" class="cbr">ABOUT US</a></span>
+	<span class="menu"><a href="CONTACT US.html" style="text-decoration:none;" class="cbr">CONTACT US</a></span>
+	<i style="font-size:20px;cursor:pointer;" class="fa menu">&#xf002;</i>
+</div>
+
+<div class="l3">
+
+<div class="l3 bg1">
+	<div class="black0">
+	
+	<center class="center1 fl">
+		<button class="b1">#new</button>
+		<button class="b2">#health</button>
+		<h1 class="i2">Discover your true health</h1>
+	</center>
+</div>
+</div>
+
+<div class="l3 bg2">
+	<div class="black1">
+	
+	<center class="center2 f1">	
+		<button class="b3">#Entertainment</button>
+		<button class="b4">#Health</button>
+		<h1 class="i2">Top 10 Dancers you should</h1>
+	</center>
+
+</div>
+</div>
+
+<div class="l3 bg3">
+	<div class="black3">
+	
+	<center class="center3 F1">
+		<button class="b5">#Religion</button>
+		<button class="b6">#new</button>
+		<h1 class="i2">What did buddha teach?</h1>
+	</center>
+
+</div>
+</div>
+</div>
+<div class="l4">
+	<div class="l5">
+		<button class="b7 fl">Breaking News</button>
+	</div>
+	
+	<div class="l6 fl">
+		<marquee><p class="menu1 fl">“Speaks perfect English”: Trump’s offensive praise of a Latino Border Patrol agent Watch J. Lo live her best life, Nicki Minaj go regal, and Ariana Grande go religious. Tesla fans have found a new person to blame for Elon Musk’s troubles: his girlfriend The Pentagon won’t check if US bombs killed kids in Yemen. CNN did it for them.
+		</p></marquee>
+	</div>
+	</div>
+
+
+<div class="l7">
+	<h1 class="fs1">Top Trending</h1>
+	<hr style="width:90%">
+<div class="l8 images1">
+	<div class="bbb">
+	<div class="black4">
+		<center class="mt">
+	<p class="i3"><b>Creativity comes within itself for everyone</b></p>
+	<button class="b8">#new</button>
+	<button class="b9">#Education</button>
+	<button class="b10">#children</button>
+	<p class="fs10">Lorem Ipsum has been the industry's standard dummy text ever since<br>the 1500s, when an unknown printer took a galley.</p>
+		</center>
+	</div>
+	</div>
+</div>
+
+<div class="l9 images2">
+	<div class="black5">
+	<center class="mt1">
+	<p class="i3"><b>Traffic, A Big Problem</b></p>
+	<button class="b8">#new</button>
+	<button class="b10">#Politics</button>
+	</center>
+	</div>
+</div>
+
+<div class="l10 images3">
+	<div class="black5">
+	<center class="mt1">
+		<p class="i3">Best Gadgets in town</p>
+		<button class="b8"><b>#new</b></button>
+		<button class="b4">#Health</button>
+	</center>
+	</div>
+</div>
+</div>
+
+<div class="l11 images4">
+	
+	</div>
+	<br><br>
+
+<p class="fs1"><b>Latest Posts</b></p>
+<hr style="width:90%;">
+<div class="l12">
+	
+	<div class="images5">
+	<div class="bbb">
+	<div class="black6">
+		<center><br>
+		<p class="i3"><b>New Generation of people loving food</b></p>
+		<button class="b11">#New</button>
+		<button class="b12">#Sports</button>
+		<button class="b13">#Trending</button>
+		<p class="fs10">Lorem Ipsum has been the industry's standard dummy text ever since<br>the 1500s, when an unknown printer took a galley.</p>
+		</center>		
+	</div>
+	</div>		
+	</div>
+		
+	<div class="images6">
+	<div class="bbb">
+	<div class="black6">
+		<center><br>
+		<p class="i3"><b>2018's most fascinating governor's election, explained</b></p><button class="b11">#New</button>	
+		<button class="b12">#Security</button>
+		<button class="b13">#politics</button>
+		<p class="fs10">Lorem Ipsum has been the industry's standard dummy text ever since<br>the 1500s, when an unknown printer took a galley.</p>	
+		</center>
+	</div>	
+	</div>		
+	</div>
+</div>
+
+<div class="l13">
+	
+	<div class="l14">
+	
+		<div class="l15">
+		<div class="images7">
+		</div></div>
+		<div class="l16">
+		<p class="fs11"><b>Watch: the 3 best performances of the 2018 VMAs</b></p>
+		<button class="b14">#New</button>
+		<button class="b15">#Health</button>
+		</div>
+	
+		<div class="l17">
+		<div class="images8">
+		</div></div>
+		<div class="l18">
+		<p class="fs11"><b>Music bringing people together everywhere</b></p>
+		<button class="b16">#New</button>
+		<button class="b17">#Health</button>
+		</div>
+	
+		
+		<div class="l19">
+		<div class="images9">
+		</div></div>
+		<div class="l20">
+		<p class="fs11"><b>“Speaks perfect English”: Trump’s offensive<br>praise of a Latino Border Patrol agent</b></p>
+		<button class="b14">#new</button>
+		<button class="b15">#Health</button>	
+		</div>
+	
+	</div>
+
+	<div class="l14">
+
+		<div class="l15">
+		<div class="images10">
+		</div></div>
+		<div class="l16">
+		<p class="fs11"><b>7 reasons Hollywood doesn’t make romantic<br>comedies anymore</b></p>
+		<button class="b17">#New</button>
+		<button class="b15">#Sports</button>
+		</div>
+
+		<div class="l15">
+		<div class="images11">
+		</div></div>
+		<div class="l16">
+		<p class="fs11"><b>Must have gadgets in this century</b></p>
+		<button class="b14">#New</button>
+		<button class="b17">#Health</button>
+		</div>
+
+		<div class="l15">
+		<div class="images12">
+		</div></div>
+		<div class="l16">
+		<p class="fs11"><b>Why conservatives love to hate Alexandria Ocasio-Cortez</b></p>
+		<button class="b14">#New</button>
+		<button class="b15">#Health</button>
+		</div>
+
+	</div>
+</div>
+	
+	
+<div class="l21">
+
+	<div class="images13">
+		<div class="bt">
+		<br>
+	<center>
+		<p class="i4"><b>Build your dream magazine now</b></p>
+		<p class="i5">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing<br>layouts and visual mockups. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua.</p>
+		<br>
+		<button class="b18">Buy Now</button>
+	</center>
+
+
+		</div>
+	</div>
+</div>
+
+<div class="l22">
+	<br>
+	<p class="fs1"><b>Most Viewed</b></p>
+	<hr style="width:90%">
+<br>
+
+<div class="l23">
+	<div class="images14">
+		<div class="black7">
+				<center>
+			<p class="i3 mt1"><b>Technology and Music</b></p>
+			<hr style="width:80%">
+			<button class="b16">#New</button>
+			<button class="b17">#Health</button>
+				</center>
+		</div>
+	</div>
+	<div class="images15">
+		<div class="black7">
+			<center>
+			<p class="i3 mt1"><b>Raising a child</b></p>
+			<hr style="width:80%">
+			<button class="b14">#New</button>
+			<button class="b15">#Health</button>
+			</center>
+		</div>
+	</div>
+	<div class="images16">
+		<div class="black7">
+			<center>
+			<p class="i3 mt1"><b>Traveling</b></p>
+			<hr style="width:80%">
+			<button class="b16">#New</button>
+			<button class="b17">#Health</button>
+				</center>
+		</div>
+	</div>
+	<div class="images17">
+		<div class="black7">
+			<center>
+			<p class="i3 mt1"><b>Chester Bennington</b></p>
+			<hr style="width:80%">
+			<button class="b14">#New</button>
+			<button class="b15">#Health</button>
+				</center>
+		</div>
+	</div>
+	</div>
+</div>
+
+	<br><br><br><br><br><br><br>
+
+<p class="fs1"><b>Categoroes</b>
+<button class="b19 ml">Entertainment</button>
+<button class="b19">Politics</button>
+<button class="b19">Business</button>
+<button class="b19">Sports</button>
+
+</p>
+<hr style="width:90%;">
+
+<div class="l13">
+	<div class="l14">
+		<div class="images18">
+		<div class="bbb">
+		<div class="black6">
+		<center><br>
+		<p class="i3"><b>New Generation of people loving food</b></p>
+		<button class="b11">#New</button>
+		<button class="b12">#Sports</button>
+		<button class="b13">#Trending</button>
+		<p class="fs10">Lorem Ipsum has been the industry's standard dummy text ever since<br>the 1500s, when an unknown printer took a galley.</p>
+		</center>		
+		</div>
+		</div>		
+		</div>
+	</div>
+
+<div class="l14">
+
+		<div class="l15">
+		<div class="images10">
+		</div></div>
+		<div class="l16">
+		<p class="fs11"><b>7 reasons Hollywood doesn’t make romantic<br>comedies anymore</b></p>
+		<button class="b17">#New</button>
+		<button class="b15">#Sports</button>
+		</div>
+
+		<div class="l15">
+		<div class="images11">
+		</div></div>
+		<div class="l16">
+		<p class="fs11"><b>Must have gadgets in this century</b></p>
+		<button class="b14">#New</button>
+		<button class="b17">#Health</button>
+		</div>
+
+		<div class="l15">
+		<div class="images12">
+		</div></div>
+		<div class="l16">
+		<p class="fs11"><b>Why conservatives love to hate Alexandria Ocasio-Cortez</b></p>
+		<button class="b14">#New</button>
+		<button class="b15">#Health</button>
+		</div>
+	</div>
+</div>
+
+<div class="l13">
+	
+	<div class="l14">
+	
+		<div class="l15">
+		<div class="images7">
+		</div></div>
+		<div class="l16">
+		<p class="fs11"><b>Watch: the 3 best performances of the 2018 VMAs</b></p>
+		<button class="b14">#New</button>
+		<button class="b15">#Health</button>
+		</div>
+	
+		<div class="l17">
+		<div class="images8">
+		</div></div>
+		<div class="l18">
+		<p class="fs11"><b>Music bringing people together everywhere</b></p>
+		<button class="b16">#New</button>
+		<button class="b17">#Health</button>
+		</div>
+	
+		
+		<div class="l19">
+		<div class="images9">
+		</div></div>
+		<div class="l20">
+		<p class="fs11"><b>“Speaks perfect English”: Trump’s offensive<br>praise of a Latino Border Patrol agent</b></p>
+		<button class="b14">#New</button>
+		<button class="b15">#Health</button>	
+		</div>
+	
+	</div>
+
+	<div class="images6">
+	<div class="bbb">
+	<div class="black6">
+		<center><br>
+		<p class="i3"><b>2018's most fascinating governor's election, explained</b></p><button class="b11">#New</button>	
+		<button class="b12">#Security</button>
+		<button class="b13">#politics</button>
+		<p class="fs10">Lorem Ipsum has been the industry's standard dummy text ever since<br>the 1500s, when an unknown printer took a galley.</p>	
+		</center>
+	</div>	
+	</div>		
+	</div>
+</div>
+
+<div class="l13">
+	<div class="l14">
+		<div class="images18">
+		<div class="bbb">
+		<div class="black6">
+		<center><br>
+		<p class="i3"><b>New Generation of people loving food</b></p>
+		<button class="b11">#New</button>
+		<button class="b12">#Sports</button>
+		<button class="b13">#Trending</button>
+		<p class="fs10">Lorem Ipsum has been the industry's standard dummy text ever since<br>the 1500s, when an unknown printer took a galley.</p>
+		</center>		
+		</div>
+		</div>		
+		</div>
+	</div>
+
+<div class="l14">
+
+		<div class="l15">
+		<div class="images10">
+		</div></div>
+		<div class="l16">
+		<p class="fs11"><b>7 reasons Hollywood doesn’t make romantic<br>comedies anymore</b></p>
+		<button class="b17">#New</button>
+		<button class="b15">#Sports</button>
+		</div>
+
+		<div class="l15">
+		<div class="images11">
+		</div></div>
+		<div class="l16">
+		<p class="fs11"><b>Must have gadgets in this century</b></p>
+		<button class="b14">#New</button>
+		<button class="b17">#Health</button>
+		</div>
+
+		<div class="l15">
+		<div class="images12">
+		</div></div>
+		<div class="l16">
+		<p class="fs11"><b>Why conservatives love to hate Alexandria Ocasio-Cortez</b></p>
+		<button class="b14">#New</button>
+		<button class="b15">#Health</button>
+		</div>
+	</div>
+</div>
+
+<div class="l13">
+	
+	<div class="l14">
+	
+		<div class="l15">
+		<div class="images7">
+		</div></div>
+		<div class="l16">
+		<p class="fs11"><b>Watch: the 3 best performances of the 2018 VMAs</b></p>
+		<button class="b14">#New</button>
+		<button class="b15">#Health</button>
+		</div>
+	
+		<div class="l17">
+		<div class="images8">
+		</div></div>
+		<div class="l18">
+		<p class="fs11"><b>Music bringing people together everywhere</b></p>
+		<button class="b16">#New</button>
+		<button class="b17">#Health</button>
+		</div>
+	
+		
+		<div class="l19">
+		<div class="images9">
+		</div></div>
+		<div class="l20">
+		<p class="fs11"><b>“Speaks perfect English”: Trump’s offensive<br>praise of a Latino Border Patrol agent</b></p>
+		<button class="b14">#New</button>
+		<button class="b15">#Health</button>	
+		</div>
+	
+	</div>
+
+<div class="l13">
+	<div class="images1">
+	<div class="bbb">
+	<div class="black4">
+		<center class="mt">
+	<p class="i3"><b>Creativity comes within itself for everyone</b></p>
+	<button class="b8">#new</button>
+	<button class="b9">#Education</button>
+	<button class="b10">#children</button>
+	<p class="fs10">Lorem Ipsum has been the industry's standard dummy text ever since<br>the 1500s, when an unknown printer took a galley.</p>
+		</center>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+<div class="l24">
+
+<br>
+	<p class="fs1"><b>Fashion</b></p>
+	<hr style="width: 90%;">
+
+<div class="l25">
+	
+	<div class="images19">
+		<div class="black8">
+			<center>
+			<p class="fs12 mt250"><b>Upcoming 50% sales off</b></p>
+			<hr style="width:90%;color:#ffffff ">
+			<button class="b14">#New</button>
+			<button class="b17">#Fashion</button>
+			</center>		
+		</div>
+
+	</div>
+
+	<div class="images22">
+		<div class="black11">
+			<center>
+			<p class="fs12 mt150"><b>Best Outfit for Winter</b></p>
+			<hr style="width:90%;color:#ffffff ;">
+			<button class="b14">#New</button>
+			<button class="b17">#Fashion</button>
+			</center>
+		</div>
+	</div>
+</div>
+
+<div class="l26">
+
+	<div class="images20">
+		<div class="black9">
+			<center>
+			<p class="fs12 mt100"><b>The Killer Looks<b/></p>
+			<hr style="width:90%;color:#ffffff">
+			<button class="b14">#New</button>
+			<button class="b15">#Fashion</button>
+		 	</center>
+		 </div>
+		
+	</div>
+
+	<div class="images23">
+		<div class="black12">
+			<center>
+			<p class="fs12 mt300"><b>Look best for interview</b></p>
+			<hr style="width:90%;color:#ffffff ;">
+			<button class="b14">#New</button>
+			<button class="b17">#Fashion</button>
+			</center>
+		</div>
+	</div>
+</div>
+
+<div class="l27">
+
+	<div class="images21">
+		<div class="black10">
+			<center>
+			<p class="fs12 mt500"><b>Lopez annouces her new fashion collection</b></p>
+			<hr style="width:90%;color:#ffffff">
+			<button class="b17">#New</button>
+			<button class="b15">#Fashion</button>
+			</center>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="l28">
+	
+	<div class="box1">
+		<div class="images24">
+			<div class="black13">
+				<center>
+				<p class="fs12 p80"><b>Top 10 Guitar Riffs</b></p>
+				<button class="b20">#New</button>
+				<button class="b21">#Music</button>
+				<button class="b22">#Trending</button>
+				</center>
+			</div>
+		</div>
+	</div>
+
+<div class="box2">
+		<div class="images25">
+			<div class="black13">
+				<center>
+				<p class="fs12 p80"><b>Top Golf Courts</b></p>
+				<button class="b20">#New</button>
+				<button class="b21">#Sports</button>
+				<button class="b22">#Trending</button>
+				</center>
+			</div>
+		</div>
+	</div>
+
+<div class="box2">
+		<div class="images26">
+			<div class="black13">
+				<center>
+				<p class="fs12 p80"><b>Early Morning Breakfast</b></p>
+				<button class="b20">#New</button>
+				<button class="b21">#Sports</button>
+				<button class="b22">#Trending</button>
+				</center>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="l28">
+	
+	<div class="box1">
+		<div class="images27">
+			<div class="black13">
+				<center>
+				<p class="fs12 p80"><b>Children The Next Gen</b></p>
+				<button class="b20">#New</button>
+				<button class="b21">#Sports</button>
+				<button class="b22">#Trending</button>
+				</center>
+			</div>
+		</div>
+	</div>
+
+<div class="box2">
+		<div class="images28">
+			<div class="black13">
+				<center>
+				<p class="fs12 p80"><b>Summer Beach</b></p>
+				<button class="b20">#New</button>
+				<button class="b21">#Sports</button>
+				<button class="b22">#Trending</button>
+				</center>
+			</div>
+		</div>
+	</div>
+
+<div class="box2">
+		<div class="images29">
+			<div class="black13">
+				<center>
+				<p class="fs12 p80"><b>Mountains Calling</b></p>
+				<button class="b20">#New</button>
+				<button class="b21">#Sports</button>
+				<button class="b22">#Trending</button>
+				</center>
+			</div>
+		</div>
+	</div>
+</div>
+<br><br>
+<div class="l29">
+	<div class="images30">
+		<div class="bt1">
+			
+			<center>
+				<p class="fs13">Find Us on Instagram</p>
+				<hr style="width:250px">
+				<div class="box4">
+					<div class="images31"></div>
+					<div class="images32"></div>
+					<div class="images33"></div>
+					<div class="images34"></div>
+					<div class="images35"></div>
+					<div class="images36"></div>
+				</div>
+			</center>
+<br><br><br>
+			<div class="box5">
+
+				<p class="fs13">NewMag</p>
+				<hr>
+				<p class="cw">amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+
+				<i style="font-size:20px;margin-left:10px" class="fa i">&#xf09a;</i>
+				<i style="font-size:20px;margin-left:10px" class="fa i">&#xf081;</i>
+				<i style="font-size:20px;margin-left:10px" class="fa i">&#xf16d;</i>
+			</div>
+
+			<div class="box6">
+				<div class="box7">
+					<p class="fs13">Categories</p>
+					<hr>
+					<p class="cw">Entertaiment</p>
+					<p class="cw">Sports</p>
+					<p class="cw">Polictics</p>
+					<p class="cw">National</p>
+					<p class="cw">Blog</p>
+				</div>
+				<div class="box8">
+					<p class="fs13">Popular Tags</p>
+					<hr>
+					<p class="cw">Entertaiment</p>
+					<p class="cw">Sports</p>
+					<p class="cw">Polictics</p>
+					<p class="cw">National</p>
+					<p class="cw">Internationl</p>
+				</div>
+				<br><br><br>
+				
+				<div class="box10">
+				<center>
+				<hr>
+				<p class="cw">Copyright © 2023<a href="https://hitechskillindia.in/" style="color:red;text-decoration: none; "> Hi - Tech </a>- All Rights reserved</p>		
+				<hr>
+				</center>
+				</div>
+				</div>
+				<div class="box9">
+					<p class="fs13">Newsletter</p>
+					<hr>
+					<p class="cw">Dont Miss Anything</p>
+					<p class="cw">Subscrible to our #newsletter</p>
+					<input type="text" placeholder="Enter Email" style="height:30px;width:300px ;">
+					<button class="red" style="position: relative;left:-50px;height:34px;width:11%"><i class="fa fa-paper-plane " aria-hidden="true " ></i></button>
+				</div>
+		</div>
+	</div>
+</div>
+
+
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+
+</body>
+</html>

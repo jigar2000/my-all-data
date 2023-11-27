@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BlogMag - A Complete blog & magazine HTML Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style type="text/css">
+	
+*{font-family: open sans, sans-serif;}
+.fs11{font-size:20px;color:black;margin-left:20px;margin-top:20px }
+.fs11:hover{font-size:20px;color:red;margin-left:20px;margin-top:20px }
+
+.fs12{font-size:20px;color:#ffffff;}
+.fs12:hover{font-size:20px;color:red;}
+
+
+.i{color:#ffffff }
+.i:hover{color:red }
+
+.i2{color:#ffffff;font-size:30px }
+.i2:hover{color:#bdbdbd;font-size:30px}
+
+.fl{float:left;}
+.l1{background:#1d2e4a;height:35px;width:100%}
+
+.wh{color: #ffffff;font-size:15px;margin-left:30px;margin-top:0px }
+
+.l2{background:#ffffff;height:90px;width:100%;display:block;position:sticky;top:0 }
+.menu{margin-top: 40px;margin-left: 30px;float: left;color: black;}
+.menu:hover{margin-top: 40px;margin-left: 30px;float: left;color: red;}
+
+.cbr{color:black;}
+.cbr:hover{color:red;}
+
+.l3{height:100px;width:100%;background:#1d2e4a}
+.l4{height:100px;width:15%;background:#ffffff}
+
+.pd1{padding-top:20px;font-size:20px }
+
+.br{color:black;font-size:20px }
+.br:hover{color:red;font-size:20px }
+
+.l5{height:380px;width:100%;margin-top:50px }
+.box1{height:380px;width:250px;margin-left:100px;float: left;}
+.ibox1{height:200px;width:100%;overflow:hidden;}
+.box2{height:380px;width:250px;margin-left:50px;float:left}
+
+.images1{background-image:url(images/blog14.jpg);height:200px;width:100%;background-size:100% 100%;background-position:center;float:left;transition:1s ;}
+.images1:hover{background-image:url(images/blog14.jpg);height:200px;width:100%;background-size:100% 100%;background-position:center;float:left;transition:1s ;transform:rotate(10deg) scale(1.5);;background-repeat:no-repeat; }
+
+.images2{background-image:url(images/blog15.jpg);height:200px;width:100%;background-size:100% 100%;background-position:center;float:left;transition:1s ;}
+.images2:hover{background-image:url(images/blog15.jpg);height:200px;width:100%;background-size:100% 100%;background-position:center;float:left;transition:1s;transform:rotate(10deg) scale(1.5);;background-repeat:no-repeat;}
+
+.images3{background-image:url(images/blog16.jpg);height:200px;width:100%;background-size:100% 100%;background-position:center;float:left;transition:1s ;}
+.images3:hover{background-image:url(images/blog16.jpg);height:200px;width:100%;background-size:100% 100%;background-position:center;float:left;transition:1s;transform:rotate(10deg) scale(1.5);;background-repeat:no-repeat;}
+
+.images4{background-image:url(images/blog17.jpg);height:200px;width:100%;background-size:100% 100%;background-position:center;float:left;transition:1s ;}
+.images4:hover{background-image:url(images/blog17.jpg);height:200px;width:100%;background-size:100% 100%;background-position:center;float:left;transition:1s;transform:rotate(10deg) scale(1.5);;background-repeat:no-repeat;}
+
+.images5{background-image:url(images/blog12.jpg);height:200px;width:100%;background-size:100% 100%;background-position:center;float:left;transition:1s ;}
+.images5:hover{background-image:url(images/blog12.jpg);height:200px;width:100%;background-size:100% 100%;background-position:center;float:left;transition:1s;transform:rotate(10deg) scale(1.5);;background-repeat:no-repeat;}
+
+.images6{background-image:url(images/blog9.jpg);height:200px;width:100%;background-size:100% 100%;background-position:center;float:left;transition:1s ;}
+.images6:hover{background-image:url(images/blog9.jpg);height:200px;width:100%;background-size:100% 100%;background-position:center;float:left;transition:1s;transform:rotate(10deg) scale(1.5);;background-repeat:no-repeat;}
+
+.images7{background-image:url(images/list7.jpg);height:200px;width:100%;background-size:100% 100%;background-position:center;float:left;transition:1s ;}
+.images7:hover{background-image:url(images/list7.jpg);height:200px;width:100%;background-size:100% 100%;background-position:center;float:left;transition:1s;transform:rotate(10deg) scale(1.5);;background-repeat:no-repeat;}
+
+.images8{background-image:url(images/list8.jpg);height:200px;width:100%;background-size:100% 100%;background-position:center;float:left;transition:1s ;}
+.images8:hover{background-image:url(images/list8.jpg);height:200px;width:100%;background-size:100% 100%;background-position:center;float:left;transition:1s;transform:rotate(10deg) scale(1.5);;background-repeat:no-repeat;}
+
+.br{color:black;font-size:20px }
+.br:hover{color:red;font-size:20px }
+
+.dbox1{height:30px;width:50%;float:left; }
+
+.b1{height:50px;width:150px;color:red;border-color:red;border-radius:50px;margin-top:20px;font-size:20px }
+.b1:hover{height:50px;width:150px;color:#ffffff;background:red;border-radius:50px;margin-top:20px;font-size:20px }
+
+.b2{height:30px;width:50px;background:gray;color:#fff;border-style: none;position: relative;bottom:30px }
+
+.b3{height:30px;width:50px;background:red;color:#fff;border-style: none;position: relative;bottom:30px;float: right;}
+
+
+.l6{height:100px;width:100%;}
+.box6{height:80px;width:30%;}
+.b4{color:black;height:50px;width:50px;float:left;margin-left:5px }
+.b4:hover{color:#fff;background:#303e4b;height:50px;width:50px;float:left;margin-left:5px }
+.b5{color:black;background:#2396fa ;height:50px;width:50px;float:left;margin-left:5px;border-style:none; }
+.l29{height:800px;width:100%}
+.images30{background:black url(images/footerbg.png);background-size:cover;background-position:center;height:900px;width:100%;background-attachment:fixed;}
+/*.bt1{height:900px;width:100%;background:#333333e0;;line-height:2}*/
+.fs13{font-size:20px;color:#ffffff;padding-top:20px }
+.box11{height:200px;width:89%;background:#ffffff}
+.images31{background-image:url(images/footer2.jpg);height:200px;width:200px;background-size:cover;background-position:center;float:left;}
+.images32{background-image:url(images/footer1.jpg);height:200px;width:200px;background-size:cover;background-position:center;float:left; }
+.images33{background-image:url(images/footer3.jpg);height:200px;width:200px;background-size:cover;background-position:center;float:left; }
+.images34{background-image:url(images/footer4.jpg);height:200px;width:200px;background-size:cover;background-position:center;float:left; }
+.images35{background-image:url(images/footer2.jpg);height:200px;width:200px;background-size:cover;background-position:center;float:left; }
+.images36{background-image:url(images/footer3.jpg);height:200px;width:199px;background-size:cover;background-position:center;float:left; }
+.cw{color:#ffffff }
+.box12{height:300px;width:400px;margin-left:50px;float:left; }
+.box13{height:510px;width:400px;margin-left:10px;float:left; }
+.box7{height:400px;width:170px;float:left; }
+.box8{height:400px;width:170px;float:left;margin-left:10px }
+.box9{height:300px;width:400px;margin-left:10px;float:left;}
+.box10{height:150px;width:400px;float:left;}
+.red{background: red;color:#ffffff;border-style:none;}
+
+
+</style>
+</head>
+<body style="margin:0">
+
+<div class="l1">
+
+<p class="wh"><i style="font-size:15px" class="fa">&#xf017;</i>2023-07-07
+	<i style="font-size:15px;margin-left:20px" class="fa">&#xf0c2;</i>Bapunagar,Ahmedabad
+	<i style="font-size:20px;margin-left:900px;padding-top:5px " class="fa i">&#xf09a;</i>
+	<i style="font-size:20px;margin-left:10px" class="fa i">&#xf081;</i>
+	<i style="font-size:20px;margin-left:10px" class="fa i">&#xf16d;</i>
+
+</p>
+</div>
+
+<div class="l2">
+	<img src="images/logo1.png" style="margin-left:80px;margin-top:20px;float: left;">
+
+	<span class="menu"><a href="index.html" style="text-decoration:none;" class="cbr">HOME</a></span>
+	<span  class="menu"><a href="Blog.html" style="text-decoration:none;" class="cbr">BLOG</a></span>
+	<span  class="menu"><a href="SHOP LIST.html" style="text-decoration:none;color: red;" class="cbr">SHOP LIST</a></span>
+	<span  class="menu"><a href="ACCOUNT.html" style="text-decoration:none;" class="cbr">ACCOUNT</a></span>
+	<span  class="menu"><a href="CART.html" style="text-decoration:none;" class="cbr">CART</a></span>
+	<span  class="menu"><a href="CHECKOUT.html" style="text-decoration:none;" class="cbr">CHECKOUT</a></span>
+	<span class="menu"><a href="DETAIL.html" style="text-decoration:none;" class="cbr">DETAIL</a></span>
+	<span class="menu"><a href="ABOUT US.html" style="text-decoration:none;" class="cbr">ABOUT US</a></span>
+	<span class="menu"><a href="CONTACT US.html" style="text-decoration:none;" class="cbr">CONTACT US</a></span>
+	<i style="font-size:20px;cursor:pointer;" class="fa menu">&#xf002;</i>
+</div>
+
+<div class="l3">
+	<br><br><br><br>
+	<center>
+	<div class="l4"><br>
+		<span class="pd1 br" style="cursor: pointer;"> Home </span>|
+		<span class="pd1" style="color:red;cursor: pointer;"> shop </span>
+	</div>
+	</center>
+</div>
+	
+<br><br>	
+
+<div class="l5">
+	
+	<div class="box1">
+		<div class="ibox1">
+			<div class="images1"></div></div>
+				<button class="b2">SALE</button>
+				<center>
+				<p class="br"><b>Building Dozer</b></p>
+			</center>
+		<div class="dbox1">
+		<p><del style="margin-left:30px">$370.00</del></p>
+		</div>					
+		<div class="dbox1">
+		<p style="margin-left:30px">$320.00</p>
+		</div>
+
+		<center><button class="b1">Add to cart</button></center>
+
+	</div>
+
+	<div class="box2">
+		<div class="ibox1">
+			<div class="images2"></div></div>
+			<button class="b2">SALE</button>
+			<button class="b3">HOT</button>
+		<center>
+				<p class="br"><b>Bricks</b></p>
+			</center>
+		<div class="dbox1">
+		<p><del style="margin-left:30px">$370.00</del></p>
+		</div>					
+		<div class="dbox1">
+		<p style="margin-left:30px">$320.00</p>
+		</div>
+
+		<center><button class="b1">Add to cart</button></center>
+
+	</div>
+
+	<div class="box2">
+		<div class="ibox1">
+			<div class="images3"></div></div>
+			<button class="b2">SALE</button>
+			<center>
+				<p class="br"><b>Still Cutter</b></p>
+			</center>
+		<div class="dbox1">
+		<p><del style="margin-left:30px">$370.00</del></p>
+		</div>					
+		<div class="dbox1">
+		<p style="margin-left:30px">$320.00</p>
+		</div>
+
+		<center><button class="b1">Add to cart</button></center>
+
+	</div>
+
+	<div class="box2">
+		<div class="ibox1">
+			<div class="images4"></div></div>
+			<button class="b2">SALE</button>
+			<center>
+				<p class="br"><b>Elements Carrier</b></p>
+			</center>
+		<div class="dbox1">
+		<p><del style="margin-left:30px">$370.00</del></p>
+		</div>					
+		<div class="dbox1">
+		<p style="margin-left:30px">$320.00</p>
+		</div>
+
+		<center><button class="b1">Add to cart</button></center>
+
+	</div>
+
+</div>
+
+<div class="l5">
+	
+	<div class="box1">
+		<div class="ibox1">
+			<div class="images5"></div></div>
+			<button class="b2">SALE</button>
+				<center>
+				<p class="br"><b>Pipeline Elements</b></p>
+			</center>
+		<div class="dbox1">
+		<p><del style="margin-left:30px">$370.00</del></p>
+		</div>					
+		<div class="dbox1">
+		<p style="margin-left:30px">$320.00</p>
+		</div>
+
+		<center><button class="b1">Add to cart</button></center>
+
+		
+	</div>
+
+	<div class="box2">
+		<div class="ibox1">
+			<div class="images6"></div></div>
+			<button class="b2">SALE</button>
+				<center>
+				<p class="br"><b>Bull Dozer</b></p>
+			</center>
+		<div class="dbox1">
+		<p><del style="margin-left:30px">$370.00</del></p>
+		</div>					
+		<div class="dbox1">
+		<p style="margin-left:30px">$320.00</p>
+		</div>
+
+		<center><button class="b1">Add to cart</button></center>
+
+		
+	</div>
+
+	<div class="box2">
+		<div class="ibox1">
+			<div class="images7"></div></div>
+			<button class="b2">SALE</button>
+			<button class="b3">HOT</button>
+				<center>
+				<p class="br"><b>Concrete Vibrator</b></p>
+			</center>
+		<div class="dbox1">
+		<p><del style="margin-left:30px">$370.00</del></p>
+		</div>					
+		<div class="dbox1">
+		<p style="margin-left:30px">$320.00</p>
+		</div>
+
+		<center><button class="b1">Add to cart</button></center>
+
+			
+	</div>
+
+	<div class="box2">
+		<div class="ibox1">
+			<div class="images8"></div></div>
+			<button class="b2">SALE</button>
+				<center>
+				<p class="br"><b>Surveying Element</b></p>
+			</center>
+		<div class="dbox1">
+		<p><del style="margin-left:30px">$370.00</del></p>
+		</div>					
+		<div class="dbox1">
+		<p style="margin-left:30px">$320.00</p>
+		</div>
+
+		<center><button class="b1">Add to cart</button></center>
+
+			
+	</div>
+
+</div>
+
+<br><br>
+<div class="l6"><br>
+	<center>
+	<div class="box6">
+		<button class="b4"><<</button>
+		<button class="b4">1</button>
+		<button class="b5">2</button>
+		<button class="b4">3</button>
+		<button class="b4">...</button>
+		<button class="b4">10</button>
+		<button class="b4">>></button>
+	</center>
+	</div>
+</div>
+
+<div class="l29">
+	<div class="images30">
+		<div class="bt1">
+			
+			<center>
+				<p class="fs13">Find Us on Instagram</p>
+				<hr style="width:250px">
+				<div class="box11">
+					<div class="images31"></div>
+					<div class="images32"></div>
+					<div class="images33"></div>
+					<div class="images34"></div>
+					<div class="images35"></div>
+					<div class="images36"></div>
+				</div>
+			</center>
+<br><br><br>
+			<div class="box12">
+
+				<p class="fs13">NewMag</p>
+				<hr>
+				<p class="cw">amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+
+				<i style="font-size:20px;margin-left:10px" class="fa i">&#xf09a;</i>
+				<i style="font-size:20px;margin-left:10px" class="fa i">&#xf081;</i>
+				<i style="font-size:20px;margin-left:10px" class="fa i">&#xf16d;</i>
+			</div>
+
+			<div class="box13">
+				<div class="box7">
+					<p class="fs13">Categories</p>
+					<hr>
+					<p class="cw">Entertaiment</p>
+					<p class="cw">Sports</p>
+					<p class="cw">Polictics</p>
+					<p class="cw">National</p>
+					<p class="cw">Blog</p>
+				</div>
+				<div class="box8">
+					<p class="fs13">Popular Tags</p>
+					<hr>
+					<p class="cw">Entertaiment</p>
+					<p class="cw">Sports</p>
+					<p class="cw">Polictics</p>
+					<p class="cw">National</p>
+					<p class="cw">Internationl</p>
+				</div>
+				<br><br><br>
+				
+				<div class="box10">
+				<center>
+				<hr>
+				<p class="cw">Copyright © 2023<a href="https://hitechskillindia.in/" style="color:red;text-decoration: none; "> Hi - Tech </a>- All Rights reserved</p>		
+				<hr>
+				</center>
+				</div>
+				</div>
+				<div class="box9">
+					<p class="fs13">Newsletter</p>
+					<hr>
+					<p class="cw">Dont Miss Anything</p>
+					<p class="cw">Subscrible to our #newsletter</p>
+					<input type="text" placeholder="Enter Email" style="height:30px;width:300px ;">
+					<button class="red" style="position: relative;left:-50px;height:34px;width:11%"><i class="fa fa-paper-plane " aria-hidden="true " ></i></button>
+				</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>
